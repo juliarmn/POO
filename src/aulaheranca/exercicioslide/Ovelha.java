@@ -40,4 +40,8 @@ public class Ovelha extends Animal {
     public void emitirSom() {
         System.out.println("Méééé");
     }
+    @Override
+    public String toString() {
+        return "ovelha";
+    }
 }

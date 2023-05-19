@@ -40,4 +40,8 @@ public class Vaca extends Animal{
     public void emitirSom() {
         System.out.println("Muuuu");
     }
+    @Override
+    public String toString() {
+        return "vaca";
+    }
 }

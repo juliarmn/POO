@@ -22,21 +22,24 @@ public class Zoo {
             System.out.println("==================");
             System.out.println("Nome: " + bichos[i].getNome());
             if (bichos[i] instanceof Vaca) {
-                System.out.println("É uma vaca, tem " + bichos[i].getNumeroPatas() + " patas e " + ((Vaca) bichos[i]).getIdade() + " anos de idade");
+                System.out.println("Tipo: " + bichos[i].toString());
+                System.out.println("Tem " + bichos[i].getNumeroPatas() + " patas e " + ((Vaca) bichos[i]).getIdade() + " anos de idade");
                 System.out.println("Sua cor é " + ((Vaca) bichos[i]).getCor());
                 System.out.println("Seu leite é classificado (no padrão de 1 a 10) com pontuação " + ((Vaca) bichos[i]).getQualidadeDoLeite());
                 System.out.println("Seu som: ");
                 bichos[i].emitirSom();
             }
             if (bichos[i] instanceof Gato) {
-                System.out.println("É um gato, tem " + bichos[i].getNumeroPatas() + " patas e " + ((Gato) bichos[i]).getIdade() + " anos de idade");
+                System.out.println("Tipo: " + bichos[i].toString());
+                System.out.println("Tem " + bichos[i].getNumeroPatas() + " patas e " + ((Gato) bichos[i]).getIdade() + " anos de idade");
                 System.out.println("Sua cor é " + ((Gato) bichos[i]).getCor());
                 System.out.println("Sua raça é " + ((Gato) bichos[i]).getRaca());
                 System.out.println("Seu som: ");
                 bichos[i].emitirSom();
             }
             if (bichos[i] instanceof Ovelha) {
-                System.out.println("É uma ovelha, tem " + bichos[i].getNumeroPatas() + " patas e " + ((Ovelha) bichos[i]).getIdade() + " anos de idade");
+                System.out.println("Tipo: " + bichos[i].toString());
+                System.out.println("Tem " + bichos[i].getNumeroPatas() + " patas e " + ((Ovelha) bichos[i]).getIdade() + " anos de idade");
                 System.out.println("Sua cor é " + ((Ovelha) bichos[i]).getCorDaLa());
                 System.out.println("Sua raça é " + ((Ovelha) bichos[i]).getRaca());
                 System.out.println("Seu som: ");
