@@ -1,4 +1,4 @@
-package guiandswing;
+package guiandswing.aula1;
 
 import com.sun.source.util.Plugin;
 
@@ -66,5 +66,9 @@ public class GroupButao {
         radioPanel.add(plutao);
 
         f.add(radioPanel);
+
+        if (mercurio.isSelected())
+            System.out.println("Mercurio selecionou");
+        bg.clearSelection();
     }
 }

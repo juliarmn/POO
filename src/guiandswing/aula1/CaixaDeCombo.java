@@ -1,9 +1,9 @@
-package guiandswing;
+package guiandswing.aula1;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class Painel {
+public class CaixaDeCombo {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -20,15 +20,16 @@ public class Painel {
         f.setVisible(true);
         f.setLayout(new FlowLayout());
 
-        JPanel p1 = new JPanel();
-        JPanel p2 = new JPanel();
+        String[] pets = {"Passarito", "Cachurros", "Gatin", "Porquitu", "Peixin glup"};
 
-        p1.setBackground(Color.pink);p1.setPreferredSize(new Dimension(100, 100));
+        JComboBox petCombo = new JComboBox(pets);
+        petCombo.setSelectedIndex(2);
 
-        p2.setBackground(Color.MAGENTA);p2.setPreferredSize(new Dimension(200, 200));
+        f.add(petCombo);
 
-        p2.setBorder(BorderFactory.createTitledBorder("Olá"));
-
-        f.add(p1); f.add(p2);
+        String petName = (String)petCombo.getSelectedItem();
+        System.out.println(petName);
     }
+
+
 }

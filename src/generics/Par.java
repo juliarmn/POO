@@ -4,7 +4,7 @@ public class Par <K,V>{
     private K key;
     private V value;
 
-    public Par(K key, V value) {
+    public Par(V value, K key) {
         this.key = key;
         this.value = value;
     }

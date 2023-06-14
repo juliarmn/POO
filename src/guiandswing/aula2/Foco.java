@@ -1,11 +1,9 @@
-package aula_13;
+package guiandswing.aula2;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 
 public class Foco  extends JPanel {
 

@@ -1,4 +1,4 @@
-package guiandswing;
+package guiandswing.aula1;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;

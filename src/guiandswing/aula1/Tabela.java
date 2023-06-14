@@ -1,4 +1,4 @@
-package guiandswing;
+package guiandswing.aula1;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,8 +22,8 @@ public class Tabela {
 
         String[] colNames = {"Nome", "Cor", "Animal", "Idade"};
         Object[][] data = {
-                {"Amanda", "roxo", "gato", new Integer(19)},
-                {"Júlia", "rosa", "passarito", new Integer(21)}};
+                {"Amanda", "roxo", "gato", (Integer)19},
+                {"Júlia", "rosa", "passarito", 21}};
 
         JTable table = new JTable(data, colNames);
         table.setPreferredScrollableViewportSize(new Dimension(450, 450));

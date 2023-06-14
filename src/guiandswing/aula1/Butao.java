@@ -1,4 +1,4 @@
-package guiandswing;
+package guiandswing.aula1;
 import javax.swing.*;
 import java.awt.event.KeyEvent;
 
@@ -31,8 +31,12 @@ public class Butao {
         JButton b3 = new JButton("Olá, gata 3");
         b3.setMnemonic(KeyEvent.VK_C);
         b3.setEnabled(true);
-        f.add(b1);
-        f.add(b2);
+
+        JPanel panel = new JPanel();
+        panel.add(b1);
+        panel.add(b2);
+        panel.add(b3);
+        f.add(panel);
     }
 
 }
